@@ -15,6 +15,73 @@ An advanced, secure voting platform that leverages **IoT devices**, provides **r
 - 🧩 **Modular API-First Backend** using Node.js & Express
 - 🔒 **Role-Based Authentication** using JWT
 
+🛠️ Tech Stack
+Here’s a detailed overview of the technologies powering Votely:
+
+🔧 Backend
+Node.js – JavaScript runtime environment
+
+Express.js – Fast, minimalist web framework for building APIs
+
+🗄️ Database (Pluggable)
+PostgreSQL – SQL-based relational database
+
+MongoDB – NoSQL document database for scalable data handling
+
+📡 IoT Integration
+RFID / Bluetooth Modules – Physical layer for secure voter identification
+
+Custom Handlers – Interface scripts for hardware-level authentication
+
+🔐 Authentication & Authorization
+JWT (JSON Web Tokens) – Role-based secure access (Admin, Student)
+
+☁️ Cloud Infrastructure
+AWS / GCP / Azure – Optional cloud deployment, storage, and resilience
+
+Local Storage – Uploaded media stored in media/ directory
+
+🌐 Frontend (Planned / Optional)
+React.js / Vue.js / Angular – Ready to integrate with any modern frontend
+
+RESTful APIs – Full API support for web or mobile frontends
+
+🧪 Developer Tools
+Nodemon – Automatically restarts the server on file changes
+
+Dotenv – Securely manage environment variables
+
+ESLint / Prettier – Linting and code formatting (optional)
+
+📂 Project Structure (Simplified)
+bash
+Copy
+Edit
+.
+├── controllers/        # API request handlers
+├── models/             # Database schemas
+├── routes/             # Express route definitions
+├── utils/              # Utility functions and helpers
+├── media/              # Image uploads and local files
+├── .env                # Environment variables
+├── server.js           # Main server file
+└── README.md           # Project documentation
+✅ Features
+🔐 Secure Voting with IoT-based physical verification
+
+👥 User Roles – Admin & Student login with token-based access
+
+📊 Real-Time Insights – Vote tracking & audit logs (planned)
+
+☁️ Cloud Ready – Easily deployable to AWS, GCP, or Azure
+
+🛡️ Tamper-proof – Minimal human interaction, fully traceable
+
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
+
+
+
 ---
 
 ## 🚀 Setup & Installation
@@ -26,9 +93,6 @@ An advanced, secure voting platform that leverages **IoT devices**, provides **r
 - 🛢️ PostgreSQL / MongoDB (optional for persistence)  
 - ☁️ Access to cloud services (e.g., AWS/GCP/Azure)
 
-### 🛠️ Installation Steps
-
-```bash
 # 1. Clone the repository
 git clone https://github.com/thaaru05/Votely-Secure-IoT-Driven-Smart-Voting-System-with-Real-Time-Insights-and-Cloud-Resilience.git
 cd Votely-Secure-IoT-Driven-Smart-Voting-System-with-Real-Time-Insights-and-Cloud-Resilience
@@ -38,48 +102,14 @@ npm install
 
 # 3. Configure environment variables
 cp .env.example .env
-# Edit .env file with: PORT, DATABASE_URL, JWT_SECRET, IOT_CONFIG, CLOUD_STORAGE
+# Edit the .env file to include:
+# PORT, DATABASE_URL, JWT_SECRET, IOT_CONFIG, CLOUD_STORAGE
 
 # 4. (Optional) Run database migrations
 npm run migrate
 
-# 5. Create media folder for image uploads
+# 5. Create a media folder for image uploads
 mkdir media
 
 # 6. Start the development server
 npm run dev
-
-
-
-## 🛠️ Tech Stack
-
-Below is a breakdown of the technologies used in the Votely project:
-
-### 🔧 Backend
-- **Node.js** – JavaScript runtime environment
-- **Express.js** – Minimal and flexible Node.js web framework for creating APIs
-
-### 🗄️ Database (Optional)
-- **PostgreSQL** – Open-source relational database system
-- **MongoDB** – NoSQL database for storing JSON-like documents
-
-### 📡 IoT Integration
-- **RFID / Bluetooth Modules** – For physical voter verification (IoT-based identification)
-- **Custom Scripts/Handlers** – To interact with hardware devices and process authentication signals
-
-### 🔐 Authentication & Authorization
-- **JWT (JSON Web Tokens)** – Secure token-based authentication for user roles (Admin, Student)
-
-### ☁️ Cloud & Storage
-- **AWS / GCP / Azure** – For cloud hosting, database storage, and backup automation
-- **Local Media Storage** – User-uploaded photos stored in a `media/` folder
-
-### 🌐 Frontend (Future Integration)
-- **React.js / Vue.js / Angular** – Frontend frameworks (planned or optional) for building user interfaces
-- **RESTful APIs** – Backend is fully API-ready to connect with any frontend or mobile app
-
-### 🧪 Development Tools
-- **Nodemon** – Auto-restart server during development
-- **Dotenv** – Manage environment variables via `.env` files
-- **ESLint / Prettier** – Code linting and formatting (optional)
-
