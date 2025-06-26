@@ -76,3 +76,53 @@ Frontend: Compatible with any web or mobile client
 | POST   | `/upload`                   | Upload voter or candidate photo            |
 | POST   | `/iot/verify`               | Verify voter via IoT (e.g. RFID tag)       |
 | POST   | `/cloud/backup`             | Trigger a DB backup operation              |
+
+
+
+📁 Folder Structure
+
+Votely/
+│
+├── media/                 # Stores voter & candidate photos
+├── iot/                   # IoT device integration modules
+├── routes/                # API endpoint routes
+├── controllers/           # Business logic handlers
+├── models/                # DB models (if using DB)
+├── utils/                 # Utility & helper functions
+├── views/                 # (Optional) frontend or dashboard UI
+├── .env                   # Environment configuration
+└── app.js                 # Application entry point
+
+
+📈 Future Enhancements
+🖥️ Advanced Admin Dashboard with analytics
+
+📱 Mobile/Web UI with progress visualization
+
+⚙️ Automate cloud DB backups and failure recovery
+
+👩‍💻 Role-based front-end access (Admin / Staff / Voter)
+
+✉️ Email or SMS notifications for voters
+
+🔍 Audit logs for all IoT interactions and vote activities
+
+
+🤝 Contributing
+We’d love your help! Contribute by:
+1. Fork the repo
+2. Create a branch: git checkout -b feature/awesome-IoT
+3. Make changes & test
+4. Commit: git commit -m "Add feature"
+5. Push: git push origin feature/awesome-IoT
+6. Open a Pull Request
+
+
+🙏 Acknowledgements
+💡 Inspired by smart voting use cases
+
+📦 Express.js and open-source libraries
+
+🔧 Contributors and testers for feedback and support
+
+
